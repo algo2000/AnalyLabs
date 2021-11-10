@@ -21,6 +21,8 @@
     "d3": "^7.1.1",
     "electron-serve": "^1.1.0",
     "electron-store": "^8.0.1",
+    "plotly.js": "^2.6.2",
+    "react-plotly.js": "^2.5.1",
     "styled-components": "^5.3.3",
     "styled-reset": "^4.3.4"
   },
