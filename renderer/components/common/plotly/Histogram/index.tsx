@@ -24,9 +24,10 @@ export default function Histogram({
   useEffect(() => {
     const trace = {
       x: [...xData],
+      type: "histogram",
       name: "control",
+      histnorm: "percent",
       autobinx: true,
-      histnorm: "count",
       marker: {
         color: "rgba(255, 100, 102, 0.7)",
         line: {
@@ -35,12 +36,6 @@ export default function Histogram({
         },
       },
       opacity: 0.5,
-      type: "histogram",
-      xbins: {
-        end: 2.8,
-        size: 0.06,
-        start: 0.5,
-      },
     };
 
     setData([trace]);
@@ -48,8 +43,8 @@ export default function Histogram({
       autosize: true,
       paper_bgcolor: "rgba(0,0,0,0)",
       plot_bgcolor: "rgba(0,0,0,0)",
-      barmode: "overlay",
       title: title,
+      showlegend: true,
       xaxis: { title: xAxis },
       yaxis: { title: yAxis },
       shapes: [
